@@ -11,16 +11,7 @@ void dfs1(int u,int x)
         dfs1(v,u);
     }
 }
-void dfs2(int u,int p)
-{
-    node[p][c[u]-'a'].push_back(u);
-    for (int i=h[u];i;i=nxt[i])
-    {
-        int v=to[i];
-        if (v==fa[u]) continue;
-        dfs2(v,p);
-    }
-}
+
 int main()
 {
     freopen("a.in","r",stdin);
@@ -42,4 +33,5 @@ int main()
         for (int i=1;i<=n;++i) dfs2(i,i);
     }
     return 0;
+
 }

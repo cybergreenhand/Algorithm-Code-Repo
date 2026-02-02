@@ -21,21 +21,6 @@ void dfs2(int u,int p)
         dfs2(v,p);
     }
 }
-void dfs3(int u)
-{
-    for (int i=h[u];i;i=nxt[i])
-    {
-        int v=to[i];
-        if (v==fa[u]) continue;
-        dfs3(v);
-    }
-    for (int i=0;i<26;++i)
-    {
-        if (!node[u][i].size()) continue;
-        f[u][i]=(f[u][i]+node[u][i].size())%mod;
-        
-    }
-}
 int main()
 {
     freopen("a.in","r",stdin);

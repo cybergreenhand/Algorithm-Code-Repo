@@ -5,7 +5,7 @@ int main()
 {
     system("g++ rand.cpp -o rand");
     system("g++ test.cpp -o test");
-    system("g++ lg9869.cpp -o ans");
+    system("g++ cf2110d.cpp -o ans");
     while (true)
     {
         system ("rand.exe");

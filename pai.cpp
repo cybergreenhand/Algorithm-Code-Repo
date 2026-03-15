@@ -4,15 +4,15 @@ int i;
 int main()
 {
     system("g++ rand.cpp -o rand");
+    system("g++ cf2110e.cpp -o ans");
     system("g++ test.cpp -o test");
-    system("g++ cf2110d.cpp -o ans");
     while (true)
     {
         system ("rand.exe");
-        system ("test.exe");
         system ("ans.exe");
+        system ("test.exe");
         printf ("Test %d\n",++i);
-        if (system("fc a.out b.out"))
+        if (system("fc c.out b.out"))
         {
             printf ("Wrong on Test %d\n",i);
             system ("pause");
